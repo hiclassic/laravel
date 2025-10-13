@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\ProductController;
 
 Route::resource('jobs', JobController::class);
 
 Route::resource('jobs', JobController::class);
+Route::resource('products', ProductController::class);
 
 
 Route::get('/', function () {
